@@ -1,0 +1,14 @@
+.blog_show{
+  background-color:rgba(255,255,255,0.7);
+  box-shadow: 1px 1px 5px rgba(136,136,136,0.7);
+  border-radius:5px;
+  color:black;
+  width:1150px;
+  padding:10px 30px;
+  margin:30px;
+  float:right;
+}
+.blog_show a{
+  target:"_blank"
+  text-decoration:none; 
+}

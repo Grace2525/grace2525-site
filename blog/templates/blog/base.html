@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <title>Grace25舒服的小窝 - this is a 蒟蒻</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/base.css' %}"/>
+    {% block head %}{% endblock head %}
+    <link rel="icon" type="img/icon" href="{% static 'blog/img/59399592_p0.ico' %}"/>
+  </head>
+
+  <body>
+    <h2>
+      <div class="nav">
+        <ul>
+          <li><a href="#">Grace2525的博客</a><li>
+          <li><a href="#">首页</a></li>
+        </ul>
+      </div>
+    </h2>
+
+    <br />
+    <br />
+
+    {% block content %}{% endblock content %}
+  
+    {% block side %}{% endblock side %}
+    
+    <div class="footer">
+      <p style="font-size:45px;font-family:consola">Develop by <a href = "https://www.luogu.com.cn/user/359883">Grace25</a>,2020.01.15</p>
+    </div>
+  </body>
+</html>

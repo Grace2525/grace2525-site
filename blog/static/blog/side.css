@@ -1,0 +1,31 @@
+/*自我介绍*/
+.owner_show{
+  background-color:rgba(240,248,255,0.7);
+  border-radius:5px;
+  color:black;
+  text-align:center;
+  width:475px;
+  height:1000px;
+  padding:20px;
+  margin:30px 10px;
+}
+/*显示所属主题*/
+.blogTopicShow{
+  background-color:rgba(240,248,255,0.7);
+  border-radius:5px;
+  width:475px;
+  margin: 30px 10px;
+  padding: 20px;
+  color: black;
+  text-align: center;
+}
+.blogTopicShow ul {
+  padding: 20px;
+  list-style-type: none;
+}
+
+.blogTopicShow li {
+  border: 1px solid black;
+  margin: -1px;
+  padding: 20px;
+}

@@ -1,0 +1,25 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/blog.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/side.css' %}"/>
+{% endblock head %}
+
+{% block content %}
+  {% for blog in blogs %}
+    <div class="blog_show">
+      <p style="font-size:45px"><a href="/blog/{{ blog.id }}/">{{ blog.title }}</a></p>
+      {{ blog.date_added|date:'Y M d' }}
+      <hr />
+      <p style="font-size:25px">{{ blog.about }}</p>
+    </div>
+  {% endfor %}
+{% endblock content %}
+
+{% block side %}
+  <div class="owner_show">
+    <img src="{% static 'blog/img/61695208_p0.png' %}" style="height:300px;width:300px;border-radius:50%" />
+    <p style="font-size:45px;font-family:consola">Grace25</p>
+  </div>
+{% endblock side %}

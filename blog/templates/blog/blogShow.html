@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/blog.css' %}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'blog/side.css' %}"/>
+{% endblock head %}
+
+{% block content %}
+  <div class="blog_show">
+    <p style="font-size:40px;text-align:center">{{ blog.title }}</p>
+    <p style="text-align:center">{{ blog.date_added|date:'Y.m.d' }}</p>
+    <hr />
+    {{ blog.content|safe }}
+  </div>
+{% endblock content %}
+
+{% block side %}
+  <div class="blogTopicShow">
+    <h3>所属主题</h3>
+    <ul>
+      {% for topic in blog.topics.all %}
+        <li>{{ topic.about }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock side %}
